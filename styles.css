@@ -2,6 +2,9 @@
     --text-color: #1a1c20;
     --link-color: #4a76ee;
     --background-color: #eeeff1;
+    --green-color:#73BF99;
+    --red-color:#C7171B;
+    --yellow-color:#CDD069;
 }
 
 *{
@@ -62,6 +65,7 @@ nav .right a span{
     align-items: center;
     padding: 0 50px;
     margin: 50px 0;
+    margin-bottom: 100px;
     gap: 40px;
 }
 
@@ -107,12 +111,142 @@ nav .right a span{
 
 .hero .headshot{
     flex: 2;
+    display: flex;
+    justify-content: right;
 }
 
 .hero .headshot img{
     width: 350px;
     border-radius: 30%;
 }
+/*Section2: Skills*/
+.skills .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+/* I Master section*/
+.skills .master .text{
+    padding: 10px 50px;
+}
+
+.skills .master .text h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+.skills .master .text p{
+    padding: 0px 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills .master .objects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+    margin-bottom: 20px;
+}
+
+.skills .master .objects .skill{
+    display: inline-block;
+    height: 50px;
+    width: 170px;
+    margin:20px;
+    border: 1.5px solid var(--green-color);
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skills .objects .skill:hover{
+    transform: scale(1.01);
+    transition: 0.1s;
+}
+/*I know section*/
+.skills .know .text{
+    padding: 10px 50px;
+}
+
+.skills .know .text h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+.skills .know .text p{
+    padding: 0px 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills .know .objects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+    margin-bottom: 20px;
+}
+
+.skills .know .objects .skill{
+    display: inline-block;
+    height: 50px;
+    width: 170px;
+    margin:20px;
+    border: 1.5px solid var(--link-color);
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+/*I am learning section*/
+.skills .learning .text{
+    padding: 10px 50px;
+}
+
+.skills .learning .text h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.skills .learning .text p{
+    padding: 0px 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills .learning .objects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+    margin-bottom: 20px;
+}
+
+.skills .learning .objects .skill{
+    display: inline-block;
+    height: 50px;
+    width: 170px;
+    margin:20px;
+    border: 1.5px solid var(--yellow-color);
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+
 
 @media (max-width: 750px){
     /*NAVBAR*/
