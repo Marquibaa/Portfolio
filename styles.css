@@ -5,6 +5,7 @@
     --green-color:#73BF99;
     --red-color:#C7171B;
     --yellow-color:#CDD069;
+    --card-color:#DDE7F2;
 }
 
 *{
@@ -177,28 +178,103 @@ nav .right a span{
 }
 
 .skills .objects .skill:hover{
-    transform: scale(1.01);
+    transform: scale(1.1);
     transition: 0.1s;
 }
 
-/* I Master section*/
+/* I Master*/
 
 .skills .master .objects .skill{
     border: 1.5px solid var(--green-color);
 }
 
-/*I know section*/
+/*I know*/
 
 .skills .know .objects .skill{
     border: 1.5px solid var(--link-color);
 }
 
-/*I am learning section*/
+/*I am learning*/
 
 .skills .learning .objects .skill{
     border: 1.5px solid var(--yellow-color);
 }
 
+/*Section 3: Projects*/
+
+.projects .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 200px;
+    font-size: 25px;
+}
+/*buttons*/
+
+.projects .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 100px;
+    flex-wrap: wrap;
+}
+
+.projects .buttons button{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .2s;
+    font-size: 15px;
+    color: var(--link-color);
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.projects .buttons .active{
+    border: none;
+    background-color: var(--link-color);
+    color: var(--background-color);
+}
+
+.projects .cards{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+
+}
+
+.projects .cards .card{
+    border: solid 2px var(--text-color);
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 30px;
+    background-color: var(--card-color);
+}
+
+.projects .cards .card img{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    max-height: 180px;
+    margin: 0 auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.projects .cards .card .cardbody h6{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.projects .buttons button:hover{
+    transform: scale(1.05);
+}
 
 
 @media (max-width: 1100px){
@@ -232,4 +308,13 @@ nav .right a span{
     .skills .text p{
         padding: 0 20px;
     }
+
+    .skills .objects{
+        padding: 0 20px;
+    }
+
+    .projects .buttons{
+        padding: 0 20px;
+    }
+
 }

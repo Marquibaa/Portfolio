@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!--Navbar-->
@@ -163,7 +164,28 @@
         </section>
 
         <!--SECTION 3: PROJECTS-->
-        <section class ="projects" id = "projects"></section>
+        <section class ="projects" id = "projects">
+            <div class="header">
+                <h2>My Projects</h2>
+            </div>
+            <!--Buttons-->
+            <div class="buttons">
+                <button class ="active" data-name="all">Show All</button>
+                <button data-name="project">Personal Projects</button>
+                <button data-name="academic">Academic Projects</button>
+                <button data-name="miscellaneous">Miscellaneous</button>
+            </div>
+            <!--Cards-->
+            <div class="cards">
+                <div class="card" data-name="project">
+                    <img src="images/snakecm.png" alt="">
+                    <div class="cardbody">
+                        <h6>snAkeCM</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic enim molestiae cum non repellat veritatis fuga rem magnam quod beatae ipsam laboriosam nisi doloremque, ex quos nihil. Porro, sit blanditiis!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
